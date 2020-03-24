@@ -1,1 +1,1 @@
-Advanced Mobility Analitics Group
+Advanced Mobility Analytics Group
