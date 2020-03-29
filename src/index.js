@@ -30,19 +30,6 @@ function App(props) {
   };
 
   return (
-    // <AuthContext.Provider value={{ authTokens, setAuthTokens: setTokens }}>
-    // <Router history={hist}>
-    //   <Switch>
-    //     <Route exact path="/admin" component={Admin} />
-    //     <Route exact path="/rtl" component={RTL} />
-    //     <Route exact path="/login" component={Login} />
-    //     <Redirect from="/" to="/admin/dashboard" />
-    //     {/* <Route exact path="/register" component={Register} />
-    //     <Redirect from="/" to="/admin/dashboard" /> */}
-    //   </Switch>
-    // </Router>
-    // </AuthContext.Provider>
-
     <Router history={hist}>
       <Switch>
         <Route path="/login" component={SignInSide} />
