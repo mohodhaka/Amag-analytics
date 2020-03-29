@@ -40,7 +40,7 @@ import CheckoutPage from "views/Checkout/Checkout";
 // core components/views for RTL layout
 import RTLPage from "views/RTLPage/RTLPage.js";
 
-const dashboardRoutes = [ 
+const dashboardRoutes = [
   {
     path: "/dashboard",
     name: "Dashboard",
@@ -51,7 +51,7 @@ const dashboardRoutes = [
   },
   {
     path: "/Checkout",
-    name: "Checkout",
+    name: "Site Maintenance",
     rtlName: "لوحة القيادة",
     icon: LocationOn,
     component: CheckoutPage,

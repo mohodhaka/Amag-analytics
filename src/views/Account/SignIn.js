@@ -20,40 +20,27 @@ import LogonBgImage from "../../assets/img/logonBG.jpg";
 
 import axios from "axios";
 
-
-
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {"Copyright © "}
-      <Link color="inherit" href="http://amagroup.io/">
-        Advanced Mobile Analitics Group
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
-  );
-}
+import Copyright from "../../components/Copyright";
 
 const useStyles = makeStyles(theme => ({
   root: {
     height: "100vh"
   },
-  videoContainer:{
-    overflow:"hidden"
+  videoContainer: {
+    overflow: "hidden"
   },
-  video:{    
-    width:"auto",
-    height:"100%"
+  video: {
+    width: "auto",
+    height: "100%"
   },
-  logo:{
-    width:"20vw"
+  logo: {
+    width: "20vw"
   },
-  title:{
-    margin:"5vh 0"
+  title: {
+    margin: "5vh 0"
   },
-  image: {   
-    backgroundImage:"url(" + LogonBgImage.toString() + ")",
+  image: {
+    backgroundImage: "url(" + LogonBgImage.toString() + ")",
     backgroundRepeat: "no-repeat",
     backgroundColor:
       theme.palette.type === "light"
@@ -78,7 +65,7 @@ const useStyles = makeStyles(theme => ({
   },
   submit: {
     margin: theme.spacing(3, 0, 2),
-    padding:"10px"
+    padding: "10px"
   }
 }));
 
@@ -91,7 +78,7 @@ export default function SignInSide(props) {
   function postLogin(e) {
     e.preventDefault();
 
-    window.location = "/admin";    
+    window.location = "/admin";
     return;
   }
 
@@ -100,13 +87,12 @@ export default function SignInSide(props) {
       <CssBaseline />
       {/* <Grid item xs={false} sm={4} md={7} className={classes.videoContainer}>
         <iframe src={"https://player.vimeo.com/video/38707819?autoplay=1&loop=1&color=00000&background=1"} className={classes.video} frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-      </Grid> */}  
-      
+      </Grid> */}
+
       <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
         <div className={classes.paper}>
-          
           <img src={LogonLogo} className={classes.logo} />
-          
+
           <Typography component="h1" variant="h5" className={classes.title}>
             Sign in
           </Typography>
@@ -165,7 +151,7 @@ export default function SignInSide(props) {
           </form>
         </div>
       </Grid>
-      <Grid item xs={false} sm={4} md={7} className={classes.image}></Grid>
+      <Grid item xs={false} sm={4} md={7} className={classes.image} />
     </Grid>
   );
 }
